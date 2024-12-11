@@ -23,7 +23,7 @@ h1 {
     height: 300;
 }
 
-.oswald-<uniquifier> {
+.oswald {
   font-family: "Oswald", sans-serif;
   font-optical-sizing: auto;
   font-weight: <weight>;
