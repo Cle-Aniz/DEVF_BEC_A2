@@ -9,6 +9,7 @@ p {
     width: 1400;
     height: 800;
     background-color: rgb(190, 220, 247);
+    display: flex;
 }
 
 #presentacion img {
