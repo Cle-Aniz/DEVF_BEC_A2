@@ -5,8 +5,15 @@ p {
     line-height: 0.5;
 }
 
-.Alimentacion {
+#presentacion {
+    width: 1400;
+    height: 800;
+    background-color: aliceblue;
+}
 
+#presentacion img {
+    width: 1080;
+    height: 800;
 }
 
 .roboto-thin {
