@@ -11,14 +11,14 @@ h1 {
     text-align: justify;
 }
 
-#presentacion {
+#Presentacion {
     width: 1400;
     height: 800;
     background-color: rgb(190, 220, 247);
     display: flex;
 }
 
-#presentacion img {
+#Presentacion img {
     width: 800;
     height: 300;
 }
