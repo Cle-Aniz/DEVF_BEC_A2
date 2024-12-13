@@ -29,6 +29,7 @@ h1 {
 
 p, li {
   font-family: 'Roboto', sans-serif;
+  margin: 10px 20px;
 }
 
 header {
@@ -150,4 +151,75 @@ nav ul li a {
   .location-image img {
     filter: blur(2px);
   }
+}
+
+
+.carrete-container {
+  width: 100vw;
+  height: 25vh;
+  overflow: hidden;
+  position: relative;
+}
+
+.carrete {
+  display: flex;
+  width: max-content;
+  animation: scroll 15s linear infinite;
+}
+
+.carrete img {
+  height: 100%;
+  width: 25vw;
+  object-fit: cover;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.video-library {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.video-item {
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.video-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.video-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-bottom: 4px solid #ddd;
+}
+
+.video-item p {
+  padding: 10px;
+  font-size: 16px;
+  color: #333;
+  background-color: #f9f9f9;
+  border-top: 2px solid #ddd;
+}
+
+.video-item a {
+  text-decoration: none;
+  color: inherit;
 }
